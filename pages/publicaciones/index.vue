@@ -1,7 +1,7 @@
 <template >
   <v-container class="background-image-container">
     <AppBar />
-    <Card />
+    <Hero />
     <Footer></Footer> 
   </v-container>
     
@@ -11,9 +11,8 @@
     <script setup>
     
     import AppBar from "./components/app-bar.vue"
-    import Card from "./components/card.vue"
+    import Hero from "./components/hero.vue"
     import Footer from "./components/footer.vue"
-
     </script>
 
 <style scoped>

@@ -1,40 +1,43 @@
 <template>
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1 style="font-size:50px">NHOT</h1>
-      <h1>Las redes flotan entre sí</h1>
-      <br>
-    </div>
-  </div>
+  <v-card
+    class="mx-auto my-16" 
+    max-width="425"
+  >
+    <v-list lines="two">
+      <v-list-subheader>Mi Perfil</v-list-subheader>
+  
+      <template v-for="(person, index) in people" :key="index">
+        <v-list-item
+          :prepend-avatar="person.avatar"
+          :title="person.title"
+        >
+          <template v-slot:subtitle>
+            <span class="font-weight-bold">{{ person.name }}</span> &mdash; {{ person.message }}
+          </template>
+        </v-list-item>
+  
+        <v-divider inset v-if="index < people.length - 1"></v-divider> 
+      </template>
+    </v-list>
+  </v-card>
 </template>
 
-<script setup>
-// No se necesitan funciones específicas para este ejemplo
+<script>
+export default {
+  data() {
+    return {
+      people: [
+        {
+          avatar: "https://cdn.vuetifyjs.com/images/lists/1.jpg",
+          title: "Name:",
+          name: "Manuel",
+          message: "I'll be in your neighborhood doing errands this weekend. Do you want to hang out?"
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/fondo1x.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
-  font-family: Arial, sans-serif;
-}
 </style>

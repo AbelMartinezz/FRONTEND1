@@ -1,9 +1,7 @@
 <template>
     <v-container class="background-image-container">
       <AppBar />
-      <Card />
-      <Card1 />
-      <Card2 />
+      <Seccioneventos />
       <Footer></Footer> 
     </v-container>
       
@@ -12,11 +10,9 @@
       
       <script setup>
       
-      import AppBar from "../index/components/app-bar.vue"
-      import Card from "./components/card.vue"
-      import Card1 from "./components/card1.vue"
-      import Card2 from "./components/card2.vue"
-      import Footer from "../index/components/footer.vue"
+      import AppBar from "../../index/components/app-bar.vue"
+      import Seccioneventos from "../../products/components/seccioneventos.vue"
+      import Footer from "../../index/components/footer.vue"
   
       </script>
   
@@ -28,5 +24,3 @@
     margin-top: 50px;
   }
   </style>
-  
-      

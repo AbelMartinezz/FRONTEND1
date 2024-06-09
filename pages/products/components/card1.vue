@@ -1,6 +1,6 @@
 <template>
   <v-card class="mx-auto my-4" max-width="344">
-    <v-img height="200px" src="/public/imagen1.jpg" cover></v-img>
+    <v-img height="200px" src="/mapa.jpg" cover></v-img>
 
     <v-card-title class="pt-4">
       {{ VCardItem.titulo }}
@@ -11,8 +11,8 @@
     </v-card-subtitle>
 
     <v-card-actions class="py-4">
-      <v-btn color="orange lighten-2" text>
-        Explore
+      <v-btn color="orange lighten-2" text :to="VCardItem.link">
+        IR A
       </v-btn>
       <v-spacer></v-spacer>
       <v-btn :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'" @click="show = !show"></v-btn>
@@ -34,9 +34,10 @@ export default {
   data: () => ({
     show: false,
     VCardItem: {
-      text: "Añadir descripción",
-      titulo: "EVENTO EN LA UNIVERSIDAD",
-      subtitulo: "Más información"
+      text: "Añade lugares a la comunidad",
+      titulo: "MAPA",
+      subtitulo: "Más información", 
+      link: "./products/components/mapa"
     }
   }),
 }
