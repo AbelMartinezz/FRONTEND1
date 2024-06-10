@@ -34,9 +34,9 @@ export default {
   data: () => ({
     show: false,
     VCardItem: {
-      text: "Añade lugares a la comunidad",
+      text: "Te permite explorar restaurantes, puestos de comida y otros establecimientos gastronómicos, comparar sus ubicaciones, horarios y calificaciones, y tomar una decisión informada sobre dónde comer.",
       titulo: "MAPA",
-      subtitulo: "Más información", 
+      subtitulo: "¿Para qué sirve?", 
       link: "./products/components/mapa"
     }
   }),

@@ -21,5 +21,6 @@
   background-image: url('fondo1.jpg');
   background-size: contain;
   background-position: center;
+  background-color: #E9E9E9 ;
 }
 </style>

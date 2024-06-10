@@ -34,10 +34,10 @@ export default {
   data: () => ({
     show: false,
     VCardItem: {
-      text: "Soy ePC",
+      text: "Son el conjuntos de estudiantes que comparten un mismo espacio físico y tiempo de aprendizaje, cursando las mismas asignaturas y orientados por un docente. Estos grupos facilitan la interacción, el intercambio de ideas y el trabajo colaborativo, fomentando el aprendizaje significativo y la construcción de conocimiento colectivo.",
       titulo: "GRUPOS",
-      subtitulo: "Más información",
-      link: "./products/components/grupos"
+      subtitulo: "¿Qué son?",
+      link: "../products/components/eventos"
     }
   }),
 }

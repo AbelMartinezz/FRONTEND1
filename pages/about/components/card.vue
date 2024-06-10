@@ -64,13 +64,13 @@
             variant="flat"
             block
           >
-            <span class="hidden-sm-and-down">
-              ¡¡¡Únete!!!
-            </span>
+          <span class="hidden-sm-and-down">
+            <a href="/about/components/inicio">¡¡¡Únete!!!</a>
+          </span>
 
-            <span class="hidden-md-and-up">
-              ¡¡¡Únete!!!
-            </span> 
+          <span class="hidden-md-and-up">
+            <a href="/about/components/inicio">¡¡¡Únete!!!</a>
+          </span> 
           </v-btn>
         </v-col>
       </v-row>

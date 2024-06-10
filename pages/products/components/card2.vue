@@ -34,9 +34,9 @@ export default {
   data: () => ({
     show: false,
     VCardItem: {
-      text: "Añade tu evento.",
+      text: "Amplía tu experiencia universitaria y enriquece tu formación personal y profesional. Descubre oportunidades para profundizar en tus áreas de interés, desarrollar nuevas habilidades y construir relaciones valiosas.",
       titulo: "EVENTOS",
-      subtitulo: "Más información",
+      subtitulo: "¿Qué son?",
       link: "../publicaciones" 
     }
   }),
